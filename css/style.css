@@ -136,9 +136,8 @@ nav {
     transform: translateY(-10px);
 }
 
-.service-card i {
-    font-size: 2.5rem;
-    color: var(--blue);
+.service-card .emoji {
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -165,44 +164,40 @@ nav {
     color: var(--dark);
 }
 
-.destination-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.destination-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.destination-card {
-    position: relative;
-    overflow: hidden;
+.destination-item {
+    background: var(--white);
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     transition: transform 0.3s ease;
 }
 
-.destination-card img {
-    width: 100%;
-    display: block;
-    transition: transform 0.3s ease;
+.destination-item:hover {
+    transform: translateY(-5px);
 }
 
-.destination-card:hover img {
-    transform: scale(1.1);
+.destination-item .emoji {
+    font-size: 2rem;
 }
 
-.destination-card .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(42, 74, 123, 0.8);
-    color: var(--white);
-    padding: 1rem;
-    text-align: center;
-    transition: opacity 0.3s ease;
+.destination-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
 }
 
-.destination-card:hover .overlay {
-    opacity: 0.9;
+.destination-item p {
+    font-size: 1rem;
+    color: var(--dark);
 }
 
 /* Contato */
@@ -290,7 +285,11 @@ footer {
         font-size: 2.5rem;
     }
 
-    .service-grid, .destination-grid {
+    .service-grid {
         grid-template-columns: 1fr;
+    }
+
+    .destination-list {
+        flex-direction: column;
     }
 }
