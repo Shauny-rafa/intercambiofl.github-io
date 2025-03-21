@@ -3,82 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Programa de intercâmbio escolar 2025">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Intercâmbio Global 2025">
-    <meta property="og:image" content="images/og-image.jpg">
-    
-    <title>Empresa Shauny FL 2025</title>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <title>Shauny FL Company - Intercâmbio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="main-nav">
-        <div class="nav-brand">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <span>Intercâmbio 2025</span>
+    <header>
+        <div class="logo">
+            <img src="images/icons/logo.png" alt="Shauny FL Company">
         </div>
-        
-        <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="russia.html">Projeto Rússia</a>
-            <a href="#quiz">Quiz</a>
-            <a href="#mapa">Mapa</a>
-            <a href="#blog">Blog</a>
-            <a href="#contato">Contato</a>
-        </div>
-        
-        <div class="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="russia.html">Rússia</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Transforme seu futuro com intercâmbio</h1>
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar destinos...">
-                <button><i class="fas fa-search"></i></button>
+            <h1>Bem-vindo à Shauny FL Company</h1>
+            <p>Descubra o mundo com nossos programas de intercâmbio.</p>
+            <a href="#services" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="images/icons/exchange.png" alt="Intercâmbio">
+                <h3>Intercâmbio Cultural</h3>
+                <p>Viva uma experiência única em outro país.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/language.png" alt="Cursos de Idiomas">
+                <h3>Cursos de Idiomas</h3>
+                <p>Aprenda novos idiomas com os melhores professores no CEL do Firmino!</p>
+                <p>Cursos disponiveis: MATRICULAS FECHADAS DA TURMA DE 2024</p>
+            </div>
+            <div class="service-item">
+                <img src="images/icons/support.png" alt="Suporte 24/7">
+                <h3>Suporte 24/7</h3>
+                <p>Estamos sempre aqui para ajudar você.</p>
             </div>
         </div>
     </section>
 
-    <!-- Quiz Section -->
-    <section class="quiz-section" id="quiz">
-        <!-- Conteúdo do Quiz -->
-    </section>
-
-    <!-- Interactive Map -->
-    <section class="map-section" id="mapa">
-        <div id="worldMap"></div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog-section" id="blog">
-        <!-- Posts do Blog -->
-    </section>
-
-    <!-- Contact Form -->
-    <section class="contact-section" id="contato">
-        <form id="contactForm" action="https://formspree.io/f/xblggpdw" method="POST">
-            <!-- Campos do formulário -->
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <!-- Conteúdo do rodapé -->
+    <footer id="contact">
+        <p>&copy; 2023 Shauny FL Company. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
