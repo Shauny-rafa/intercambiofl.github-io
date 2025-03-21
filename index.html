@@ -3,59 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercâmbio Global 2025</title>
+    <meta name="description" content="Programa de intercâmbio escolar 2025">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Intercâmbio Global 2025">
+    <meta property="og:image" content="images/og-image.jpg">
+    
+    <title>Empresa Shauny FL 2025</title>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="logo">🌍 Intercâmbio 2025</div>
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <span>Intercâmbio 2025</span>
+        </div>
+        
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="russia.html">Rússia</a>
+            <a href="#home" class="active">Home</a>
+            <a href="russia.html">Projeto Rússia</a>
             <a href="#quiz">Quiz</a>
             <a href="#mapa">Mapa</a>
+            <a href="#blog">Blog</a>
+            <a href="#contato">Contato</a>
         </div>
-        <div class="hamburger">☰</div>
+        
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <h1>Descubra Seu Próximo Destino!</h1>
-        <p>Programa de intercâmbio exclusivo para alunos</p>
-    </section>
-
-    <!-- Quiz -->
-    <section class="quiz-section" id="quiz">
-        <div class="quiz-container">
-            <div class="quiz-step active" data-step="1">
-                <h3>1. Qual seu orçamento máximo?</h3>
-                <button data-value="5000">Até R$ 5.000</button>
-                <button data-value="10000">Até R$ 10.000</button>
+        <div class="hero-content">
+            <h1>Transforme seu futuro com intercâmbio</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar destinos...">
+                <button><i class="fas fa-search"></i></button>
             </div>
-            <!-- Mais perguntas... -->
         </div>
     </section>
 
-    <!-- Mapa Interativo -->
+    <!-- Quiz Section -->
+    <section class="quiz-section" id="quiz">
+        <!-- Conteúdo do Quiz -->
+    </section>
+
+    <!-- Interactive Map -->
     <section class="map-section" id="mapa">
-        <div id="interactiveMap"></div>
+        <div id="worldMap"></div>
     </section>
 
-    <!-- Blog -->
+    <!-- Blog Section -->
     <section class="blog-section" id="blog">
-        <h2>📰 Preparação para Viagem</h2>
-        <div class="blog-posts"></div>
+        <!-- Posts do Blog -->
     </section>
 
-    <!-- FAQ -->
-    <section class="faq-section">
-        <h2>❔ Perguntas Frequentes</h2>
-        <div class="faq-items"></div>
+    <!-- Contact Form -->
+    <section class="contact-section" id="contato">
+        <form id="contactForm" action="https://formspree.io/f/xblggpdw" method="POST">
+            <!-- Campos do formulário -->
+        </form>
     </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- Conteúdo do rodapé -->
+    </footer>
 
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
