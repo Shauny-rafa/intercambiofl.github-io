@@ -229,13 +229,49 @@
     </nav>
 
     <section class="hero" id="home">
+
         <div class="hero-content">
             <h1>Viva a experiência do intercâmbio perfeito</h1>
             <p>Descubra destinos incríveis e planeje seu intercâmbio com especialistas</p>
             <a href="#contato" class="cta-button">Começar Agora</a>
         </div>
     </section>
+<!-- Adicione esta seção antes do formulário de contato -->
+<section class="api-integrations" id="dados">
+    <div class="currency-converter">
+        <h2>Conversor de Moedas</h2>
+        <div class="converter-box">
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Valor" step="0.01">
+                <select id="from-currency">
+                    <option value="BRL">BRL</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <div class="swap-btn" onclick="swapCurrencies()">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="input-group">
+                <input type="text" id="converted" readonly>
+                <select id="to-currency">
+                    <option value="USD">USD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                </select>
+            </div>
+            <button onclick="convertCurrency()">Converter</button>
+        </div>
+    </div>
 
+    <div class="real-deals">
+        <h2>Ofertas em Tempo Real</h2>
+        <div id="deals-container"></div>
+    </div>
+
+</section>
     <section class="features" id="servicos">
         <div class="feature-card">
             <i class="fas fa-globe feature-icon"></i>
