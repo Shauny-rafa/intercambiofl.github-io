@@ -5,22 +5,7 @@ const expenses = {
     luxury: 300,
 };
 
-// Calculadora de Gastos
-document.getElementById('expenseForm').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const duration = parseInt(document.getElementById('duration').value);
-    const tripType = document.getElementById('tripType').value;
-    const total = duration * expenses[tripType];
-    document.getElementById('result').innerText = `Custo estimado: $${total}`;
-});
-
-// Área com DeepSeek (simulação)
-function askDeepSeek() {
-    const question = document.getElementById('question').value;
-    const answer = `DeepSeek: Para "${question}", o custo estimado é $${Math.floor(Math.random() * 5000)}.`;
-    document.getElementById('answer').innerText = answer;
-}
-
+// Chaves de API
 const aviationstackApiKey = 'd512dab53d65a46b102b176d4f9630fe';
 const exchangeRatesApiKey = 'a363f8aad44faf9657f4f4817358f8d0';
 
@@ -73,7 +58,7 @@ document.getElementById('expenseForm').addEventListener('submit', async (e) => {
 
     // Exibe o resultado
     document.getElementById('result').innerText = `Custo estimado: ${convertedAmount.toFixed(2)} ${currency}`;
-);
+});
 
 // Área com DeepSeek (simulação)
 function askDeepSeek() {
