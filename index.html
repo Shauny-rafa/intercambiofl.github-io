@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shauny FL Company - Intercâmbio</title>
+    <title>Shauny FL Intercâmbios</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/icons/logo.png" alt="Shauny FL Company">
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Shauny<span>FL</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#contato">Contato</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="russia.html">Rússia</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="hamburger">☰</div>
+    </nav>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Bem-vindo à Shauny FL Company</h1>
-            <p>Descubra o mundo com nossos programas de intercâmbio.</p>
-            <a href="#services" class="btn">Saiba Mais</a>
+            <h1>Viva a experiência do intercâmbio perfeito</h1>
+            <p>Descubra destinos incríveis e planeje seu intercâmbio com especialistas</p>
+            <a href="#contato" class="cta-button">Começar Agora</a>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <!-- Serviços -->
+    <section class="services" id="servicos">
         <h2>Nossos Serviços</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <img src="images/icons/exchange.png" alt="Intercâmbio">
-                <h3>Intercâmbio Cultural</h3>
-                <p>Viva uma experiência única em outro país.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <h3>+50 Destinos</h3>
+                <p>Explore nossos destinos em todos os continentes</p>
             </div>
-            <div class="service-item">
-                <img src="images/icons/language.png" alt="Cursos de Idiomas">
-                <h3>Cursos de Idiomas</h3>
-                <p>Aprenda novos idiomas com os melhores professores no CEL do Firmino!</p>
-                <p>Cursos disponiveis: MATRICULAS FECHADAS DA TURMA DE 2024</p>
-                <p>Idiomas que foram disponibilizados: Espanhol, Francês, Inglês, Italiano, Japonês e INGLÊS (somente para alunos do Ensino Médio)</p>
-                <p>Público-alvo: alunos matriculados na Rede Estadual de Ensino a partir do 7º ano do Ensino Fundamental, Ensino Médio, ETEC e EJA.</p>
+            <div class="service-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Suporte Especializado</h3>
+                <p>Acompanhamento durante todo o processo</p>
             </div>
-            <div class="service-item">
-                <img src="images/icons/support.png" alt="Suporte 24/7">
-                <h3>Suporte 24/7</h3>
-                <p>Estamos sempre aqui para ajudar você.</p>
+            <div class="service-card">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Planos Personalizados</h3>
+                <p>Crie o intercâmbio dos seus sonhos</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>&copy; 2023 Shauny FL Company. Todos os direitos reservados.</p>
+    <!-- Destinos -->
+    <section class="destinations" id="destinos">
+        <h2>Destinos Populares</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="images/russia.jpg" alt="Rússia">
+                <h3>Rússia</h3>
+                <p>Descubra a cultura e história russa</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/canada.jpg" alt="Canadá">
+                <h3>Canadá</h3>
+                <p>Estude em um dos países mais seguros do mundo</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/japan.jpg" alt="Japão">
+                <h3>Japão</h3>
+                <p>Explore a tecnologia e tradição japonesa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato">
+        <h2>Fale Conosco</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Seu email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 BlueSky Intercâmbios. Todos os direitos reservados.</p>
     </footer>
 
     <script src="js/main.js"></script>
