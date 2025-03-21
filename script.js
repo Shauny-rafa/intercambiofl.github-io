@@ -1,17 +1,22 @@
-document.getElementById('filterButton').addEventListener('click', () => {
-    const searchTerm = document.getElementById('search').value;
-    // Dados simulados (substitua por dados reais depois)
-    const data = [
-        { destino: 'Rússia', preco: 'Mais procurados: R$ 2.363; Férias em família: R$ 2.165; Férias românticas: R$ 3.134; Férias de luxo: R$ 3.283; Férias de baixo custo: R$ 2.015.' },
-    ];
+// Dados de exemplo (substitua por dados reais coletados de um site de viagens)
+const expenses = {
+    economy: 100, // Custo diário em dólares
+    medium: 200,
+    luxury: 300,
+};
 
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = data
-        .filter(item => item.destino.toLowerCase().includes(searchTerm.toLowerCase()))
-        .map(item => `
-            <div class="item">
-                <h3>${item.destino}</h3>
-                <p>Preço: ${item.preco}</p>
-            </div>
-        `).join('');
+// Calculadora de Gastos
+document.getElementById('expenseForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const duration = parseInt(document.getElementById('duration').value);
+    const tripType = document.getElementById('tripType').value;
+    const total = duration * expenses[tripType];
+    document.getElementById('result').innerText = `Custo estimado: $${total}`;
 });
+
+// Área com DeepSeek (simulação)
+function askDeepSeek() {
+    const question = document.getElementById('question').value;
+    const answer = `DeepSeek: Para "${question}", o custo estimado é $${Math.floor(Math.random() * 5000)}.`;
+    document.getElementById('answer').innerText = answer;
+}
