@@ -24,7 +24,7 @@ async function fetchFlightPrices(destination) {
 
 // Função para converter moeda (exemplo com Exchange Rates API)
 async function convertCurrency(amount, fromCurrency, toCurrency) {
-    const url = `https://api.exchangeratesapi.io/v1/convert?access_key=${exchangeRatesApiKey}&from=${fromCurrency}&to=${toCurrency}&amount=${amount}`;
+    const url = `http://api.exchangeratesapi.io/v1/convert?access_key=${exchangeRatesApiKey}&from=${fromCurrency}&to=${toCurrency}&amount=${amount}`;
     try {
         const response = await fetch(url);
         const data = await response.json();
