@@ -3,17 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intercâmbio eletivas de Turismo</title>
+    <title>Intercâmbio na Rússia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Intercambio para Rússia</h1>
-    <p>Encontre também outras melhores opções de intercâmbio!</p>
-    <div id="filters">
-        <input type="text" id="search" placeholder="Buscar por país...">
-        <button id="filterButton">Filtrar</button>
-    </div>
-    <div id="results"></div>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Intercâmbio na Rússia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Descubra o intercâmbio na Rússia</h2>
+            <p>Calcule seus gastos e planeje sua viagem!</p>
+        </div>
+    </section>
+
+    <!-- Calculadora de Gastos -->
+    <section class="calculator">
+        <h2>Calculadora de Gastos</h2>
+        <form id="expenseForm">
+            <label for="duration">Tempo de estadia (dias):</label>
+            <input type="number" id="duration" min="1" required>
+
+            <label for="tripType">Tipo de viagem:</label>
+            <select id="tripType" required>
+                <option value="economy">Econômica</option>
+                <option value="medium">Média</option>
+                <option value="luxury">Luxo</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <!-- Informações sobre a Rússia -->
+    <section class="info">
+        <h2>Por que escolher a Rússia?</h2>
+        <p>A Rússia oferece uma experiência única de intercâmbio, com uma rica cultura, cidades históricas e oportunidades acadêmicas incríveis.</p>
+    </section>
+
+    <!-- Área com DeepSeek -->
+    <section class="deepseek">
+        <h2>Quer saber sobre outros destinos?</h2>
+        <p>Pergunte ao DeepSeek:</p>
+        <div id="chat">
+            <input type="text" id="question" placeholder="Ex: Quanto custa ir para o Japão?">
+            <button onclick="askDeepSeek()">Perguntar</button>
+            <div id="answer"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Intercâmbio na Rússia. Todos os direitos reservados.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
