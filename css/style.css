@@ -1,0 +1,43 @@
+/* styles.css */
+/* ========== Variáveis ========== */
+:root {
+    --azul-escuro: #002366;
+    --vermelho-russia: #CC0000;
+    --dourado: #FFD700;
+}
+
+/* ========== Estilos Gerais ========== */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* ========== Navbar ========== */
+nav {
+    background: var(--azul-escuro);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========== Chatbot ========== */
+.ai-assistant {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem;
+}
+
+/* ========== Mapa ========== */
+#interactiveMap {
+    height: 500px;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+/* ========== Responsivo ========== */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
