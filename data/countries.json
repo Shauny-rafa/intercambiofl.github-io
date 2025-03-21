@@ -1,1 +1,146 @@
-
+[
+    {
+        "name": "Brasil",
+        "flag": "🇧🇷",
+        "climate": "tropical",
+        "costLevel": "medium",
+        "languages": ["Português"],
+        "currency": "BRL",
+        "safety": 7.8,
+        "educationRank": 6.5,
+        "coordinates": [-14.2350, -51.9253],
+        "tags": ["praias", "natureza", "cultura"]
+    },
+    {
+        "name": "Estados Unidos",
+        "flag": "🇺🇸",
+        "climate": "temperate",
+        "costLevel": "high",
+        "languages": ["Inglês"],
+        "currency": "USD",
+        "safety": 8.2,
+        "educationRank": 9.1,
+        "coordinates": [37.0902, -95.7129],
+        "tags": ["tecnologia", "negócios", "cidades"]
+    },
+    {
+        "name": "Japão",
+        "flag": "🇯🇵",
+        "climate": "temperate",
+        "costLevel": "high",
+        "languages": ["Japonês"],
+        "currency": "JPY",
+        "safety": 9.5,
+        "educationRank": 9.3,
+        "coordinates": [36.2048, 138.2529],
+        "tags": ["tecnologia", "cultura", "história"]
+    },
+    {
+        "name": "Alemanha",
+        "flag": "🇩🇪",
+        "climate": "temperate",
+        "costLevel": "high",
+        "languages": ["Alemão"],
+        "currency": "EUR",
+        "safety": 8.9,
+        "educationRank": 9.0,
+        "coordinates": [51.1657, 10.4515],
+        "tags": ["engenharia", "história", "negócios"]
+    },
+    {
+        "name": "Austrália",
+        "flag": "🇦🇺",
+        "climate": "arid",
+        "costLevel": "high",
+        "languages": ["Inglês"],
+        "currency": "AUD",
+        "safety": 8.7,
+        "educationRank": 8.9,
+        "coordinates": [-25.2744, 133.7751],
+        "tags": ["natureza", "esportes", "vida selvagem"]
+    },
+    {
+        "name": "Canadá",
+        "flag": "🇨🇦",
+        "climate": "cold",
+        "costLevel": "medium",
+        "languages": ["Inglês", "Francês"],
+        "currency": "CAD",
+        "safety": 9.1,
+        "educationRank": 8.8,
+        "coordinates": [56.1304, -106.3468],
+        "tags": ["natureza", "tecnologia", "esportes"]
+    },
+    {
+        "name": "França",
+        "flag": "🇫🇷",
+        "climate": "temperate",
+        "costLevel": "high",
+        "languages": ["Francês"],
+        "currency": "EUR",
+        "safety": 8.3,
+        "educationRank": 8.7,
+        "coordinates": [46.2276, 2.2137],
+        "tags": ["arte", "culinária", "história"]
+    },
+    {
+        "name": "Coreia do Sul",
+        "flag": "🇰🇷",
+        "climate": "temperate",
+        "costLevel": "medium",
+        "languages": ["Coreano"],
+        "currency": "KRW",
+        "safety": 8.5,
+        "educationRank": 8.9,
+        "coordinates": [35.9078, 127.7669],
+        "tags": ["tecnologia", "kpop", "culinária"]
+    },
+    {
+        "name": "Argentina",
+        "flag": "🇦🇷",
+        "climate": "temperate",
+        "costLevel": "medium",
+        "languages": ["Espanhol"],
+        "currency": "ARS",
+        "safety": 7.2,
+        "educationRank": 7.5,
+        "coordinates": [-38.4161, -63.6167],
+        "tags": ["culinária", "natureza", "dança"]
+    },
+    {
+        "name": "Nova Zelândia",
+        "flag": "🇳🇿",
+        "climate": "temperate",
+        "costLevel": "high",
+        "languages": ["Inglês", "Maori"],
+        "currency": "NZD",
+        "safety": 9.0,
+        "educationRank": 8.6,
+        "coordinates": [-40.9006, 174.8860],
+        "tags": ["aventura", "natureza", "esportes"]
+    }
+    {
+        "name": "Portugal",
+        "flag": "🇵🇹",
+        "climate": "temperate",
+        "costLevel": "medium",
+        "languages": ["Português"],
+        "currency": "EUR",
+        "safety": 8.8,
+        "educationRank": 7.9,
+        "coordinates": [39.3999, -8.2245],
+        "tags": ["história", "praias", "vinhos"]
+    },
+    {
+        "name": "Espanha",
+        "flag": "🇪🇸",
+        "climate": "mediterranean",
+        "costLevel": "medium",
+        "languages": ["Espanhol"],
+        "currency": "EUR",
+        "safety": 8.1,
+        "educationRank": 7.8,
+        "coordinates": [40.4637, -3.7492],
+        "tags": ["arquitetura", "culinária", "futebol"]
+    }
+]
