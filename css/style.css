@@ -1,46 +1,103 @@
+/* ========== VARIÁVEIS ========== */
 :root {
-    --azul: #0055A4;
-    --vermelho: #CC0000;
-    --branco: #FFFFFF;
-    --cinza: #F5F5F5;
+    --primary-color: #2A4A7B;
+    --secondary-color: #3B6AA0;
+    --accent-color: #FF7F50;
+    --text-color: #333;
+    --bg-light: #F5F9FF;
+    --shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
-/* Quiz */
-.quiz-section {
-    padding: 2rem;
-    background: var(--cinza);
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui;
 }
 
-.quiz-step button {
-    background: var(--azul);
-    color: white;
-    padding: 1rem 2rem;
-    margin: 0.5rem;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-light);
 }
 
-/* Mapa */
-#interactiveMap {
-    height: 500px;
-    margin: 2rem 0;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* Blog */
-.blog-posts {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-/* FAQ */
-.faq-item {
+/* ========== COMPONENTES REUTILIZÁVEIS ========== */
+.card {
     background: white;
-    padding: 1rem;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ========== SEÇÃO QUIZ ========== */
+.quiz-section {
+    padding: 4rem 5%;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.quiz-step {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
     margin: 1rem 0;
+    background: rgba(255,255,255,0.1);
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.quiz-option:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ========== MAPA INTERATIVO ========== */
+#worldMap {
+    height: 600px;
+    border-radius: 15px;
+    margin: 2rem 0;
+    box-shadow: var(--shadow);
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 1200px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--primary-color);
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
 }
