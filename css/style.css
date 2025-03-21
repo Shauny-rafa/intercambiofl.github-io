@@ -73,13 +73,11 @@ nav {
     background: linear-gradient(45deg, var(--blue), var(--white));
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 0 5%;
     margin-top: 70px; /* Compensar a navbar fixa */
     color: var(--dark);
-}
-
-.hero-content {
-    max-width: 600px;
 }
 
 .hero h1 {
@@ -174,32 +172,37 @@ nav {
 }
 
 .destination-card {
-    background: var(--white);
-    padding: 1rem;
+    position: relative;
+    overflow: hidden;
     border-radius: 15px;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
 }
 
-.destination-card:hover {
-    transform: translateY(-10px);
-}
-
 .destination-card img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
-.destination-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--dark);
+.destination-card:hover img {
+    transform: scale(1.1);
 }
 
-.destination-card p {
-    font-size: 1rem;
-    color: var(--dark);
+.destination-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(42, 74, 123, 0.8);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.destination-card:hover .overlay {
+    opacity: 0.9;
 }
 
 /* Contato */
