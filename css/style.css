@@ -1,43 +1,46 @@
-/* styles.css */
-/* ========== Variáveis ========== */
 :root {
-    --azul-escuro: #002366;
-    --vermelho-russia: #CC0000;
-    --dourado: #FFD700;
+    --azul: #0055A4;
+    --vermelho: #CC0000;
+    --branco: #FFFFFF;
+    --cinza: #F5F5F5;
 }
 
-/* ========== Estilos Gerais ========== */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
-/* ========== Navbar ========== */
-nav {
-    background: var(--azul-escuro);
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* ========== Chatbot ========== */
-.ai-assistant {
-    background: #f8f9fa;
+/* Quiz */
+.quiz-section {
     padding: 2rem;
-    border-radius: 15px;
-    margin: 2rem;
+    background: var(--cinza);
 }
 
-/* ========== Mapa ========== */
+.quiz-step button {
+    background: var(--azul);
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Mapa */
 #interactiveMap {
     height: 500px;
-    border-radius: 15px;
     margin: 2rem 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ========== Responsivo ========== */
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+/* Blog */
+.blog-posts {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* FAQ */
+.faq-item {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
